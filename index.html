@@ -3,34 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERSONAJES START WARS</title>
+    <title>PERSONAJES STAR WARS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--FORMULARIO-->
-    <form id="formulario">
-        <h1>BUSCADOR</h1>
-        <p>Buscador de personaje de Star wars</p>
-        <label for="identificador">ID</label>
-        <input type="text" id="identificador">
-        <button id="buscar">BUSCAR</button>
-    </form>
-    <!--E-->
-    <span id="error"></span>
-    <div id="resultado" class="card">
-        <div class="card-details">
-        </div>
+    <div class="container">
+        <form id="formulario">
+            <h1>BUSCADOR</h1>
+            <p>Buscador de personaje de Star Wars</p>
+            
+            <div class="form-group">
+                <label for="identificador">ID del Personaje (1-2 dígitos)</label>
+                <div class="input-wrapper">
+                    <input type="text" id="identificador" placeholder="Ej: 1" maxlength="2">
+                    <div id="mensajeError" class="error-message"></div>
+                </div>
+            </div>
+            
+            <button type="button" id="botonBuscar" class="btn-buscar">BUSCAR</button>
+        </form>
+        
+        <div id="resultado" class="resultado"></div>
     </div>
     <script src="main.js"></script>
+
 </body>
 </html>
-
-
-<!--             <p class="text-title"></p>
-            <p id="nombre" class="text-body"></p>
-            <p class="text-title"></p>
-            <p id="altura" class="text-body"></p>
-            <p class="text-title"></p>
-            <p id="masa" class="text-body"></p>
-            <p class="text-title"></p>
-            <p id="genero" class="text-body"></p> -->
