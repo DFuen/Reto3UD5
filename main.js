@@ -55,6 +55,7 @@ async function buscar() {
         
         document.getElementById('identificador').value = '';
         
+        
     } catch (error) {
         resultado.innerHTML = '';
         mensajeError.textContent = error.message;
